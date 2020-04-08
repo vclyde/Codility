@@ -1,4 +1,4 @@
-package test;
+package com.kuraido.codility.test;
 
 import com.kuraido.codility.lessons.CyclicRotation;
 import org.junit.Assert;
