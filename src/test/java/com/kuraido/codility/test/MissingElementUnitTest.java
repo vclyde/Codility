@@ -1,6 +1,5 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.Demo;
 import com.kuraido.codility.lessons.MissingElement;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

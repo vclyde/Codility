@@ -1,7 +1,5 @@
 package com.kuraido.codility.lessons;
 
-import java.util.Arrays;
-
 /**
  *
  * @author Clyde Velasquez
