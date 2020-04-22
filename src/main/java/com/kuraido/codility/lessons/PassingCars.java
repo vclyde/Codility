@@ -1,4 +1,4 @@
-package com.kuraido.codility.lessons;
+  package com.kuraido.codility.lessons;
 
 /**
  *
@@ -38,5 +38,18 @@ public class PassingCars {
 
 	private static int countTotal(int[] P, int x, int y) {
 		return P[y + 1] - P[x];
+	}
+	
+	private static int[] prefixSum2(int[] a) {
+		int[] sum = new int[a.length];
+		sum[0] = a[0];
+		for (int i = 1; i < sum.length; i++) {
+			sum[i] = sum[i - 1] + a[i];
+		}
+		return sum;
+	}
+
+	private static int countTotal2(int[] P, int x, int y) {
+		return P[y] - P[x];
 	}
 }
