@@ -11,8 +11,8 @@ public class PermCheck {
 		int sum = (A.length * (A.length + 1)) / 2;
 		int sum2 = 0;
 
-		for (int i = 0; i < A.length; i++) {
-			sum2 += A[i];
+		for (int value : A) {
+			sum2 += value;
 		}
 
 		if ((sum - sum2) != 0) {
@@ -29,11 +29,11 @@ public class PermCheck {
 
 		if (N > 0 && N <= 100000) {
 
-			for (int i = 0; i < A.length; i++) {
-				if (A[i] > 100000) {
+			for (int value : A) {
+				if (value > 100000) {
 					return isPermutation;
 				}
-				a[A[i]]++;
+				a[value]++;
 			}
 
 			for (int i = 0; i < a.length; i++) {

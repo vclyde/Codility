@@ -16,15 +16,15 @@ public class TapeEquilibrium {
 		if (A.length > 2 && A.length <= 100000) {
 			
 			int sum = 0;
-			for (int i = 0; i < A.length; i++) {
-				sum += A[i];
+			for (int value : A) {
+				sum += value;
 			}
 
 			int h1 = 0, h2 = sum;
 			int p;
-			for (int i = 0; i < A.length; i++) {
-				h1 += A[i];
-				h2 -= A[i];
+			for (int value : A) {
+				h1 += value;
+				h2 -= value;
 				p = Math.abs(h1 - h2);
 
 				if (p < min) {

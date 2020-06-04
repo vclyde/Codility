@@ -22,7 +22,6 @@ public class OddOccurrencesInArray {
 				if (unpaired == A[i]) {
 					ctr++;
 				} else {
-					System.out.println(ctr);
 					if (ctr % 2 == 0) { 
 						ctr = 1;
 						unpaired = A[i];

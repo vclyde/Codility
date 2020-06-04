@@ -14,24 +14,24 @@ public class MaxCounters {
 		if ((N > 0 && N <= 100000) && (m > 0 && m <= 100000)) {
 			int currentMax = 0;
 			int max = 0;
-			for (int K = 0; K < m; K++) {
+			for (int value : A) {
 				// Ensure that each value of the array must be within the range of 1 to N+1
-				if (A[K] > 0 && A[K] <= N) {
-					if (counter[A[K] - 1] < max) {
-						counter[A[K] - 1] = max;
+				if (value > 0 && value <= N) {
+					if (counter[value - 1] < max) {
+						counter[value - 1] = max;
 					}
-					
-					counter[A[K] - 1]++;
-					
-					if (counter[A[K] - 1] > currentMax) {
-						currentMax = counter[A[K] - 1];
+
+					counter[value - 1]++;
+
+					if (counter[value - 1] > currentMax) {
+						currentMax = counter[value - 1];
 					}
-				} else if (A[K] == (N + 1)) {
+				} else if (value == (N + 1)) {
 					max = currentMax;
 				}
 			}
 
-			// Set all remaning
+			// Set all remaining
 			for (int i = 0; i < N; i++) {
 				if (counter[i] < max) {
 					counter[i] = max;

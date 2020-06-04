@@ -12,8 +12,7 @@ public class GenomicRangeQuery {
 
 		// Constraints
 		if (!S.isEmpty() && S.length() <= 100000) {
-			if ((P.length == Q.length) && (P.length > 0 && P.length <= 50000)
-				&& (Q.length > 0 && Q.length <= 50000)) {
+			if (P.length == Q.length && P.length > 0 && P.length <= 50000) {
 
 				// Converting to impact factor
 				int[] iF = new int[S.trim().length()];
@@ -81,8 +80,7 @@ public class GenomicRangeQuery {
 		int[] query = new int[M];
 
 		if (!S.isEmpty() && S.length() <= 100000) {
-			if ((P.length == Q.length) && (P.length > 0 && P.length <= 50000)
-				&& (Q.length > 0 && Q.length <= 50000)) {
+			if (P.length == Q.length && P.length > 0 && P.length <= 50000) {
 
 				int[] factor = impactFactor(S);
 				for (int K = 0; K < M; K++) {

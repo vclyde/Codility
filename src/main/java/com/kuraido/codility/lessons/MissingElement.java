@@ -11,9 +11,9 @@ public class MissingElement {
 		int[] counter = new int[1000001];
 		
 		if (A.length > 0 && A.length <= 100000) {
-			for (int i = 0; i < A.length; i++) {
-				if (A[i] > 0 && A[i] < 1000000) {
-					counter[A[i]]++;
+			for (int value : A) {
+				if (value > 0 && value < 1000000) {
+					counter[value]++;
 				}
 			}
 			
