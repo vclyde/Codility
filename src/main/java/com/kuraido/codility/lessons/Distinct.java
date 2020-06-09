@@ -1,15 +1,10 @@
 package com.kuraido.codility.lessons;
 
+import java.util.Arrays;
+
 public class Distinct {
 
-    public static void main(String[] args) {
-
-        // Counting sort
-        
-        
-    }
-
-    public int solution(int[] A) {
+    public static int solution(int[] A) {
         int N = A.length;
         int ctr = 0;
 
@@ -21,14 +16,36 @@ public class Distinct {
                 if (val < 0) {
                     if (neg[val * -1] == 0) {
                         ctr++;
+                        neg[val * -1]++;
                     }
-                    neg[val * -1]++;
+                    // neg[val * -1]++;
                 } else {
                     if (pos[val] == 0) {
                         ctr++;
+                        pos[val]++;
                     }
-                    pos[val]++;
+                    // pos[val]++;
                 }
+            }
+        }
+
+        return ctr;
+    }
+
+    // Efficient solution
+    public static int solution2(int[] A) {
+        int N = A.length;
+        int ctr = 0;
+        Arrays.sort(A);
+
+        if (N > 0) {
+            ctr++;
+        }
+
+        // (i < N - 1) -> prevents ArrayIndexOutOfBoundsException
+        for (int i = 0; i < N - 1; i++) {
+            if (A[i] != A[i + 1]) {
+                ctr++;
             }
         }
 
