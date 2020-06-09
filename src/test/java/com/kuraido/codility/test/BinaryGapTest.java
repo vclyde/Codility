@@ -1,14 +1,15 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.BinaryGap;
-import static org.junit.Assert.*;
+import com.kuraido.codility.lesson1.BinaryGap;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  *
  * @author cvelasquez
  */
-public class BinaryGapUnitTest {
+public class BinaryGapTest {
 	
 	@Test
 	public void test1() {

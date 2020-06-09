@@ -1,6 +1,6 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.OddOccurrencesInArray;
+import com.kuraido.codility.lesson2.OddOccurrencesInArray;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
  *
  * @author cvelasquez
  */
-public class OddOccurrencesInArrayUnitTest {
+public class OddOccurrencesInArrayTest {
 	
 	@Test
 	public void example() {

@@ -1,4 +1,4 @@
-package com.kuraido.codility.lessons;
+package com.kuraido.codility.lesson3;
 
 /**
  *

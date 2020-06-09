@@ -1,6 +1,6 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.MinAvgTwoSlice;
+import com.kuraido.codility.lesson5.MinAvgTwoSlice;
 import org.junit.Assert;
 import org.junit.Test;
 

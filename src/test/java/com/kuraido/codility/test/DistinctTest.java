@@ -1,6 +1,6 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.Distinct;
+import com.kuraido.codility.lesson6.Distinct;
 import org.junit.Assert;
 import org.junit.Test;
 

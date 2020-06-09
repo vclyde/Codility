@@ -1,9 +1,10 @@
 
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.PassingCars;
+import com.kuraido.codility.lesson5.PassingCars;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  *

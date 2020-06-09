@@ -1,6 +1,6 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.FrogRiverOne;
+import com.kuraido.codility.lesson4.FrogRiverOne;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
  *
  * @author cvelasquez
  */
-public class FrogRiverOneJUnitTest {
+public class FrogRiverOneTest {
 
 	@Test
 	public void test() {

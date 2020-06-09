@@ -1,6 +1,6 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.PermCheck;
+import com.kuraido.codility.lesson4.PermCheck;
 import org.junit.Assert;
 import org.junit.Test;
 

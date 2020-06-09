@@ -1,6 +1,6 @@
 package com.kuraido.codility.test;
 
-import com.kuraido.codility.lessons.TapeEquilibrium;
+import com.kuraido.codility.lesson3.TapeEquilibrium;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
  *
  * @author cvelasquez
  */
-public class TapeEquilibriumUnitTest {
+public class TapeEquilibriumTest {
 
 	@Test
 	public void test() {
