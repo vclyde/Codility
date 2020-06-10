@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Distinct {
 
-    public static int solution2(int[] A) {
+    public static int solution(int[] A) {
         int N = A.length;
         int ctr = 0;
 
