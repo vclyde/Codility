@@ -12,7 +12,7 @@ public class OddOccurrencesInArray {
 		int unpaired = 0; // Default
 		int N = A.length;
 
-		if (N % 2 != 0 && N > 0 && N <= 1000000) {
+		if (N % 2 != 0 && N <= 1000000) {
 
 			Arrays.sort(A);
 			unpaired = A[0];

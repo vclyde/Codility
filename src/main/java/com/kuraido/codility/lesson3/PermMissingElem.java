@@ -11,7 +11,7 @@ public class PermMissingElem {
 		int sum = 0;
 		int missing = 0;
 
-		if (N >= 0 && N <= 100000) {
+		if (N <= 100000) {
 			for (int i = 0; i < N; i++) {
 				sum += A[i];
 			}
